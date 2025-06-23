@@ -1,12 +1,11 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button"
-
+import CarouselTextBanner from "@/components/carousel-text-banner";
+import FeaturedProducts from "@/components/featured-products";
 
 export default function Home() {
   return (
     <main>
-      Hello World
-      <Button>Click me</Button>
+      <CarouselTextBanner />
+      <FeaturedProducts />  
     </main>
   );
 }
