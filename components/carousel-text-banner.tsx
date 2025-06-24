@@ -8,33 +8,34 @@ import Autoplay from 'embla-carousel-autoplay'
 export const dataCarouselTop = [
   {
     id: 1,
-    title: "Entrega exprés en 24/48h",
+    title: "¡Café recién hecho hasta tu puerta!",
     description:
-      "Sé parte de nuestra comunidad VIP y recibe tus pedidos en tiempo récord. ¡Únete hoy mismo!",
+      "Haz parte de nuestra familia cafetera y recibe tus pedidos en 24 a 48 horas. ¡El sabor de Colombia sin salir de casa!",
     link: "#!",
   },
   {
     id: 2,  
-    title: "Ahorra hasta un 25% en compras desde 40€",
+    title: "Ahorra sabroso con tu cafecito",
     description:
-      "Obtén un -20% al gastar 100 € o -25% al superar los 150 €. Usa el código: TARREDEV y disfruta.",
+      "Llévate un 20% de descuento desde $100.000 o un 25% al superar los $150.000. Usa el código: CAFÉVIP y disfruta más por menos.",
     link: "#",
   },
   {
     id: 3,
-    title: "Devoluciones sin complicaciones",
+    title: "Cambios sin líos ni vueltas",
     description:
-      "Disfruta de envíos y devoluciones totalmente gratis durante 30 días. Porque tu comodidad es lo primero.",
+      "Tienes hasta 30 días para devolver o cambiar tu pedido sin complicaciones. Aquí lo importante es que estés feliz con tu café.",
     link: "#",
   },
   {
     id: 4,
-    title: "Explora lo nuevo con descuento",
+    title: "Nuevos sabores con precio especial",
     description:
-      "Descubre nuestras últimas novedades ¡con hasta un 50% de descuento por lanzamiento!",
+      "Descubre nuestras últimas cosechas y mezclas con hasta un 50% de descuento. ¡Que no se te pase la oferta!",
     link: "#",
   },
 ];
+
      
 const CarouselTextBanner = () => {
     const router = useRouter()

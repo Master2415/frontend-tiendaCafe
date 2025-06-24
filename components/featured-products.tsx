@@ -43,6 +43,8 @@ const FeaturedProducts = () => {
   // Instancia del router para redirecciones
   const router = useRouter();
 
+  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+
   // Función para agregar productos al carrito
   //const { addItem } = useCart();
 
@@ -76,7 +78,9 @@ const FeaturedProducts = () => {
                         
                         {/* Imagen principal del producto */}
                         <img
-                          src={`${images.data[0].attributes.url}`}
+                          src={`${backendUrl}${images.data[0].attributes.url}`}
+                          //src={`http://localhost:1337${images.data[0].attributes.url}`}
+                          //src={`${images.data[0].attributes.url}`}
                           alt="Image featured"
                         />
 
