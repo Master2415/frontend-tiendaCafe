@@ -3,17 +3,15 @@ import { Expand, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-
+import { formatPrice } from "@/lib/formatPrice";
 import { ProductType } from "@/types/product";
 
-
+import IconButton from "@/components/icon-button";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import IconButton from "@/components/ui/icon-button";
-import { formatPrice } from "@/lib/formatPrice";
 
 type ProductCardProps = {
   product: ProductType;
@@ -52,7 +50,7 @@ const ProductCard = (props: ProductCardProps) => {
           {product.attributes.images.data.map((image) => (
             <CarouselItem key={image.id} className="group">
               <img
-                src={`${image.attributes.url}`}
+                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image.attributes.url}`}
                 alt="Image"
                 className="rounded-xl"
               />
@@ -78,7 +76,8 @@ const ProductCard = (props: ProductCardProps) => {
         </CarouselContent>
       </Carousel>
       <p className="text-2xl text-center">{product.attributes.productName}</p>
-      <p className="font-bold text-center">{formatPrice(product.attributes.price)}
+      <p className="font-bold text-center">
+        {formatPrice(product.attributes.price)}
       </p>
     </Link>
   );

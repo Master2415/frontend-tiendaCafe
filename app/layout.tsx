@@ -1,30 +1,49 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar"; // Asegúrate de importar Navbar
+import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner"; // 
+import NextTopLoader from "nextjs-toploader";
 
-const urbanist = Urbanist({
-  subsets: ["latin"],
-  variable: "--font-urbanist", 
-});
+const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Proyecto E-commerce",
-  description: "Bienvenido a nuestro e-commerce",
+  title: "TarreDev E-commerce",
+  description: "Welcome to my e-commerce from TarreDev",
 };
 
 export default function RootLayout({
-  children,   
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={urbanist.variable}>
+    <html lang="en">
       <body className={urbanist.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextTopLoader
+            color="#2299DD"
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={3}
+            crawl={true}
+            showSpinner={true}
+            easing="ease"
+            speed={200}
+            shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+          />
+          <Navbar />
+          {children}
+          <Toaster /> {/* ✅ Toaster de sonner */}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

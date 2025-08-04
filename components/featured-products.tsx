@@ -27,13 +27,13 @@ import { Card, CardContent } from "./ui/card";
 import { Expand, ShoppingCart } from "lucide-react"; // Iconos
 
 // Botón de icono personalizado
-import IconButton from "./ui/icon-button";
+import IconButton from "./icon-button";
 
 // Router de Next.js para redireccionar
 import { useRouter } from "next/navigation";
 
 // Hook personalizado para manejar el carrito
-//import { useCart } from "@/hooks/use-cart";
+import { useCart } from "@/hooks/use-cart";
 
 // Componente principal
 const FeaturedProducts = () => {
@@ -46,7 +46,7 @@ const FeaturedProducts = () => {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   // Función para agregar productos al carrito
-  //const { addItem } = useCart();
+  const { addItem } = useCart();
 
   return (
     <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
@@ -96,7 +96,12 @@ const FeaturedProducts = () => {
                             />
 
                             {/* Botón para agregar al carrito */}
-                            
+                            <IconButton
+                              onClick={() => addItem(product)}
+                              icon={<ShoppingCart size={20} />}
+                              className="text-gray-600"
+                            />
+
                             
                           </div>
                         </div>
