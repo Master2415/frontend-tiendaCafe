@@ -41,12 +41,8 @@ export default function Page() {
   const router = useRouter(); // Hook para navegación (aunque en este componente no se usa directamente)
 
   // Filtra los productos por origen si se ha seleccionado uno
-  const filteredProducts =
-    result !== null &&
-    !loading &&
-    (filterOrigin === ""  
-      ? result
-      : result.filter(
+  const filteredProducts = result !== null && !loading &&
+    (filterOrigin === ""  ? result : result.filter(
           (product: ProductType) => product.attributes.origin === filterOrigin
         ));
 
