@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import ProductImageMinuature from "@/components/shared/product-image-miniature";
 import ProductTasteOrigin from "@/components/shared/product-taste-origin";
 import { Button } from "@/components/ui/button";
@@ -8,7 +7,6 @@ import { formatPrice } from "@/lib/formatPrice";
 import { cn } from "@/lib/utils";
 import { ProductType } from "@/types/product";
 import { X } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 interface LovedItemProductProps {
     product: ProductType
