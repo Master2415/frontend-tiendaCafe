@@ -16,7 +16,7 @@ interface LovedItemProductProps {
 
 const LovedItemProduct = (props: LovedItemProductProps) => {
     const { product } = props
-    const router = useRouter()
+    
     const { removeLovedItem } = useLovedProducts()
     const { addItem } = useCart()
 

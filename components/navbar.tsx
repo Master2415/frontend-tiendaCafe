@@ -1,5 +1,5 @@
     "use client";
-import { ShoppingCart,Heart, User, Menu, BaggageClaim } from 'lucide-react';
+import { ShoppingCart,Heart, User, BaggageClaim } from 'lucide-react';
 import { useRouter } from 'next/navigation'; // Asegúrate de importar useRouter
 import MenuList from './menu-list';
 import ItemsMenuMobile from './items-menu-movile';
