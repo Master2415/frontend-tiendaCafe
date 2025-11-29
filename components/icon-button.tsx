@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils'
 
 // Define la interfaz (propiedades que recibe el componente)
 interface IconButtonProps {
-    onClick: () => void,               // Función que se ejecuta al hacer clic
+    onClick: React.MouseEventHandler<HTMLButtonElement>, // Función que se ejecuta al hacer clic
     icon: React.ReactElement,          // Icono que se mostrará dentro del botón
     className?: string                 // Clases adicionales opcionales
 }

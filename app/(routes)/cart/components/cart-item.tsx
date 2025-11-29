@@ -7,12 +7,12 @@ import { ProductType } from "@/types/product";
 import { X } from "lucide-react";
 
 interface CartItemProps {
-    product: ProductType
+    product: ProductType & { quantity: number }
 }
 
 const CartItem = (props: CartItemProps) => {
     const { product } = props
-    const { removeItem } = useCart()
+    const { removeItem, incrementItem, decrementItem } = useCart()
 
     return (
         <li className="flex py-6 border-b">
@@ -26,7 +26,12 @@ const CartItem = (props: CartItemProps) => {
                     <ProductTasteOrigin taste={product.attributes.taste} origin={product.attributes.origin} />
 
                 </div>
-                <div>
+                <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 rounded-lg px-2 py-1">
+                        <button onClick={() => decrementItem(product.id)} className="px-2 hover:text-red-500">-</button>
+                        <span className="font-semibold">{product.quantity}</span>
+                        <button onClick={() => incrementItem(product.id)} className="px-2 hover:text-green-500">+</button>
+                    </div>
                     <button
                         className={cn("rounded-full flex items-center justify-center bg-white border shadow-md p-1 hover:scale-110 transition")}
                     >

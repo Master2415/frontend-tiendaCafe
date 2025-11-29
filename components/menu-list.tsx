@@ -28,7 +28,7 @@ const MenuList =() => {
                     className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                     href="/">
                     <div className="mt-4 mb-2 text-lg font-medium">
-                      BrewCraft
+                      Master Coffee
                     </div>
                     <p className="text-muted-foreground text-sm leading-tight">
                       Tienda especializada en café de alta calidad, 
@@ -45,7 +45,7 @@ const MenuList =() => {
               <ListItem href="/offers" title="Ofertas">
                 Descubre nuestras ofertas especiales y promociones exclusivas.
               </ListItem>
-              <ListItem href="/" title="Accesorios">
+              <ListItem href="/category/accesorios" title="Accesorios">
                 Explora nuestra selección de accesorios para mejorar tu experiencia con el café.
               </ListItem>
             </ul>
@@ -70,7 +70,7 @@ const MenuList =() => {
         
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Accesorios</Link>
+            <Link href="/category/accesorios">Accesorios</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
@@ -84,22 +84,22 @@ export default MenuList
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Café en Cápsula",
-    href: "/categorias/capsula",
+    href: "/category/capsula",
     description: "Café práctico y rápido, ideal para máquinas de cápsulas.",
   },
   {
     title: "Café en Grano",
-    href: "/categorias/grano",
+    href: "/category/grano",
     description: "Café en su forma más pura para moler al gusto.",
   },
   {
     title: "Café Molido",
-    href: "/categorias/molido",
+    href: "/category/molido",
     description: "Listo para preparar en cualquier tipo de cafetera.",
   },
   {
     title: "Café Instantáneo",
-    href: "/categorias/instantaneo",
+    href: "/category/instantaneo",
     description: "Preparación rápida, solo agrega agua caliente.",
   },
 ];

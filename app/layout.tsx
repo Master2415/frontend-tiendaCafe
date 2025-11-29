@@ -10,8 +10,8 @@ import NextTopLoader from "nextjs-toploader";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TarreDev E-commerce",
-  description: "Welcome to my e-commerce from TarreDev",
+  title: "Master Coffee",
+  description: "Welcome to Master Coffee by Master2415",
 };
 
 export default function RootLayout({

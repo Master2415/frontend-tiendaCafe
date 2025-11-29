@@ -10,14 +10,13 @@ import { makePaymentRequest } from "@/api/payment";
 export default function Page() {
   const { items, removeAll } = useCart();
 
-  const prices = items.map((product) => product.attributes.price);
-  const totalPrice = prices.reduce((total, price) => total + price, 0);
+  const totalPrice = items.reduce((total, item) => total + (item.attributes.price * item.quantity), 0);
+  
   const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || ""
   );
 
   const buyStripe = async () => {
-    removeAll();
     try {
       const stripe = await stripePromise;
       const res = await makePaymentRequest.post("/api/orders", {
@@ -45,7 +44,7 @@ export default function Page() {
           </ul>
         </div>
         <div className="max-w-xl">
-          <div className="p-6 rounded-lg bg-slate-100">
+          <div className="p-6 rounded-lg bg-slate-100 dark:bg-slate-900 dark:text-white">
             <p className="mb-3 text-lg font-semibold">Order Summary</p>
             <Separator />
             <div className="flex justify-between gap-5 my-4">

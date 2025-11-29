@@ -1,6 +1,7 @@
     "use client";
 import { ShoppingCart,Heart, User, BaggageClaim } from 'lucide-react';
 import { useRouter } from 'next/navigation'; // Asegúrate de importar useRouter
+import Link from "next/link";
 import MenuList from './menu-list';
 import ItemsMenuMobile from './items-menu-movile';
 import ToggleTheme from './toggle-theme'; // Asegúrate de importar ToggleTheme  
@@ -16,12 +17,16 @@ const Navbar = () => {
     // Devuelve el JSX de la barra de navegación
     return (
         // Contenedor principal con diseño flex, padding y centrado
-        <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max-w-4xl md:max-w-6xl">
+        <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max-w-4xl md:max-w-6xl relative z-50">
 
             {/* Título del sitio con estilos y parte en negrita */}
-            <h1 className="text-3xl">
-                BrewCraft <span className="font-bold">Dev</span>
-            </h1>
+            {/* Título del sitio con estilos y parte en negrita */}
+            {/* Título del sitio con estilos y parte en negrita */}
+            <Link href="/">
+                <h1 className="text-3xl">
+                    Master <span className="font-bold">Coffee</span>
+                </h1>
+            </Link>
 
             {/* Menú para pantallas grandes (se oculta en móvil) */}
             <div className="items-center justify-between hidden sm:flex">
