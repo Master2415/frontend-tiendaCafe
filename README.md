@@ -32,27 +32,7 @@ Este proyecto utiliza un stack tecnológico de vanguardia para asegurar escalabi
 
 ## 📸 Galería y Demostración
 
-A continuación se muestra el funcionamiento y diseño de la aplicación.
-
-### 🎥 Videos Demostrativos
-
-#### 1. Diseño Principal
-Un recorrido por la interfaz de usuario, destacando la estética moderna y la navegación fluida.
-
-<video src="Images/Diseño principal.mkv" controls width="100%" style="max-width: 800px; border-radius: 8px;"></video>
-
-> *Si no puedes ver el video, [haz clic aquí para descargarlo](Images/Diseño%20principal.mkv).*
-
-#### 2. Proceso de Compra
-Demostración del flujo completo de compra, desde la selección del producto hasta el checkout.
-
-<video src="Images/Compra de un producto.mkv" controls width="100%" style="max-width: 800px; border-radius: 8px;"></video>
-
-> *Si no puedes ver el video, [haz clic aquí para descargarlo](Images/Compra%20de%20un%20producto.mkv).*
-
----
-
-### 🖼️ Capturas de Pantalla
+A continuación se muestra el diseño y funcionamiento de la aplicación.
 
 #### Página Principal
 Vista general de la landing page con productos destacados.
@@ -65,3 +45,38 @@ Visualización de ofertas y promociones especiales.
 #### Pie de Página (Footer)
 Diseño del pie de página con enlaces y contacto.
 ![Fin de la página principal](Images/Fin%20de%20la%20pagina%20principal.png)
+
+### 🖼️ Capturas de Pantalla
+
+#### 4. Experiencia de Usuario
+| Página Principal | Sección de Descuentos |
+|:---:|:---:|
+| ![Página Principal](Images/Pagina%20principal.png) | ![Sección de Descuentos](Images/Sección%20de%20descuentos.png) |
+
+#### 5. Flujo de Compra
+| Añadir Producto | Compra de Producto |
+|:---:|:---:|
+| ![Añadir Producto](Images/Añadir_producto.png) | ![Compra Producto](Images/Compra_producto.png) |
+
+#### 6. Finalización
+| Compra Exitosa | Pie de Página |
+|:---:|:---:|
+| ![Compra Exitosa](Images/compra_exitosa.png) | ![Fin de la página principal](Images/Fin%20de%20la%20pagina%20principal.png) |
+
+---
+
+### 🎥 Videos Demostrativos
+
+> **Nota:** GitHub no permite la reproducción directa de videos locales en el README. Por favor, haz clic en los enlaces para verlos o descargarlos.
+
+- **🎬 [Ver Video: Diseño Principal](Images/Diseño%20principal.mkv)**  
+  *Un recorrido por la interfaz de usuario, destacando la estética moderna y la navegación fluida.*
+
+- **🛒 [Ver Video: Proceso de Compra](Images/Compra%20de%20un%20producto.mkv)**  
+  *Demostración del flujo completo de compra, desde la selección del producto hasta el checkout.*
+
+---
+
+## 👤 Autoría
+
+Desarrollado por **master24145**.
