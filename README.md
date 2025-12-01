@@ -34,31 +34,19 @@ Este proyecto utiliza un stack tecnológico de vanguardia para asegurar escalabi
 
 A continuación se muestra el diseño y funcionamiento de la aplicación.
 
-#### Página Principal
-Vista general de la landing page con productos destacados.
-![Página Principal](Images/Pagina%20principal.png)
-
-#### Sección de Descuentos
-Visualización de ofertas y promociones especiales.
-![Sección de Descuentos](Images/Sección%20de%20descuentos.png)
-
-#### Pie de Página (Footer)
-Diseño del pie de página con enlaces y contacto.
-![Fin de la página principal](Images/Fin%20de%20la%20pagina%20principal.png)
-
 ### 🖼️ Capturas de Pantalla
 
-#### 4. Experiencia de Usuario
+#### 1. Experiencia de Usuario
 | Página Principal | Sección de Descuentos |
 |:---:|:---:|
 | ![Página Principal](Images/Pagina%20principal.png) | ![Sección de Descuentos](Images/Sección%20de%20descuentos.png) |
 
-#### 5. Flujo de Compra
+#### 2. Flujo de Compra
 | Añadir Producto | Compra de Producto |
 |:---:|:---:|
 | ![Añadir Producto](Images/Añadir_producto.png) | ![Compra Producto](Images/Compra_producto.png) |
 
-#### 6. Finalización
+#### 3. Finalización
 | Compra Exitosa | Pie de Página |
 |:---:|:---:|
 | ![Compra Exitosa](Images/compra_exitosa.png) | ![Fin de la página principal](Images/Fin%20de%20la%20pagina%20principal.png) |
@@ -77,6 +65,8 @@ Diseño del pie de página con enlaces y contacto.
 
 ---
 
-## 👤 Autoría
+## 👤 Autor
 
-Desarrollado por **master24145**.
+**Douglas T.**
+
+- GitHub: [@Master2415](https://github.com/Master2415)
