@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Frontend Ecommerce
 
-## Getting Started
+Bienvenido al repositorio del **Frontend Ecommerce**. Este proyecto es una aplicación web moderna y robusta diseñada para ofrecer una experiencia de compra fluida y atractiva. Construida con las últimas tecnologías del ecosistema React, esta tienda en línea destaca por su diseño premium, rendimiento optimizado y funcionalidades completas de comercio electrónico.
 
-First, run the development server:
+## 🚀 Funcionamiento
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+La aplicación permite a los usuarios navegar por un catálogo de productos, filtrar por categorías y ver detalles específicos de cada artículo. Los usuarios pueden agregar productos a su carrito de compras, gestionar las cantidades y proceder al pago de manera segura.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Características Principales:
+- **Catálogo Dinámico**: Exploración de productos con carga rápida y eficiente.
+- **Carrito de Compras**: Gestión de estado global con **Zustand** para una experiencia de usuario instantánea.
+- **Pasarela de Pagos**: Integración con **Stripe** para procesar pagos de manera segura.
+- **Diseño Responsivo**: Interfaz adaptada a dispositivos móviles y de escritorio.
+- **Modo Oscuro/Claro**: Soporte nativo para temas visuales.
+- **Notificaciones**: Sistema de alertas y notificaciones con **Sonner**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologías Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este proyecto utiliza un stack tecnológico de vanguardia para asegurar escalabilidad, mantenibilidad y rendimiento:
 
-## Learn More
+- **[Next.js 15](https://nextjs.org/)**: Framework de React para producción, utilizando App Router.
+- **[React 19](https://react.dev/)**: Biblioteca para construir interfaces de usuario.
+- **[Tailwind CSS 4](https://tailwindcss.com/)**: Framework de utilidad para estilos rápidos y modernos.
+- **[Shadcn UI](https://ui.shadcn.com/)**: Colección de componentes reutilizables y accesibles (basados en Radix UI).
+- **[Zustand](https://zustand-demo.pmnd.rs/)**: Gestor de estado ligero y potente para el carrito de compras.
+- **[Stripe](https://stripe.com/)**: Infraestructura de pagos para internet.
+- **[Axios](https://axios-http.com/)**: Cliente HTTP para la comunicación con el backend.
+- **[Lucide React](https://lucide.dev/)**: Iconografía hermosa y consistente.
+- **[Next Themes](https://github.com/pacocoursey/next-themes)**: Gestión de temas (Dark/Light mode).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Galería y Demostración
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A continuación se muestra el funcionamiento y diseño de la aplicación.
 
-## Deploy on Vercel
+### 🎥 Videos Demostrativos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 1. Diseño Principal
+Un recorrido por la interfaz de usuario, destacando la estética moderna y la navegación fluida.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<video src="Images/Diseño principal.mkv" controls width="100%" style="max-width: 800px; border-radius: 8px;"></video>
+
+> *Si no puedes ver el video, [haz clic aquí para descargarlo](Images/Diseño%20principal.mkv).*
+
+#### 2. Proceso de Compra
+Demostración del flujo completo de compra, desde la selección del producto hasta el checkout.
+
+<video src="Images/Compra de un producto.mkv" controls width="100%" style="max-width: 800px; border-radius: 8px;"></video>
+
+> *Si no puedes ver el video, [haz clic aquí para descargarlo](Images/Compra%20de%20un%20producto.mkv).*
+
+---
+
+### 🖼️ Capturas de Pantalla
+
+#### Página Principal
+Vista general de la landing page con productos destacados.
+![Página Principal](Images/Pagina%20principal.png)
+
+#### Sección de Descuentos
+Visualización de ofertas y promociones especiales.
+![Sección de Descuentos](Images/Sección%20de%20descuentos.png)
+
+#### Pie de Página (Footer)
+Diseño del pie de página con enlaces y contacto.
+![Fin de la página principal](Images/Fin%20de%20la%20pagina%20principal.png)
